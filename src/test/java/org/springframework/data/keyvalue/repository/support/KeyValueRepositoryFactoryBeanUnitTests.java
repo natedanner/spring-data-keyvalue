@@ -39,7 +39,7 @@ class KeyValueRepositoryFactoryBeanUnitTests {
 
 	@BeforeEach
 	void setUp() {
-		this.factoryBean = new KeyValueRepositoryFactoryBean<Repository<Object, Object>, Object, Object>(
+		this.factoryBean = new KeyValueRepositoryFactoryBean<>(
 				SampleRepository.class);
 	}
 

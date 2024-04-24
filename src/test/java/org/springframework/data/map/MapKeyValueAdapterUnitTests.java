@@ -33,8 +33,8 @@ class MapKeyValueAdapterUnitTests {
 	private static final String COLLECTION_2 = "collection-2";
 	private static final String STRING_1 = new String("1");
 
-	private Object object1 = new SimpleObject("one");
-	private Object object2 = new SimpleObject("two");
+	private final Object object1 = new SimpleObject("one");
+	private final Object object2 = new SimpleObject("two");
 
 	private MapKeyValueAdapter adapter;
 

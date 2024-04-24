@@ -34,7 +34,7 @@ import org.springframework.data.spel.spi.EvaluationContextExtension;
  */
 class BasicKeyValuePersistentEntityUnitTests {
 
-	private KeyValueMappingContext<? extends KeyValuePersistentEntity<?, ?>, ? extends KeyValuePersistentProperty<?>> mappingContext = new KeyValueMappingContext<>();
+	private final KeyValueMappingContext<? extends KeyValuePersistentEntity<?, ?>, ? extends KeyValuePersistentProperty<?>> mappingContext = new KeyValueMappingContext<>();
 
 	@Test // DATAKV-268
 	void shouldDeriveKeyspaceFromClassName() {

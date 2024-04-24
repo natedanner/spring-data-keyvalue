@@ -115,11 +115,9 @@ public class SpelPropertyComparator<T> implements Comparator<T> {
 	 */
 	protected String buildExpressionForPath() {
 
-		String rawExpression = String.format(
+		return String.format(
 				"new org.springframework.util.comparator.NullSafeComparator(new org.springframework.util.comparator.ComparableComparator(), %s).compare(#arg1?.%s,#arg2?.%s)",
 				Boolean.toString(this.nullsFirst), path.replace(".", "?."), path.replace(".", "?."));
-
-		return rawExpression;
 	}
 
 	@Override

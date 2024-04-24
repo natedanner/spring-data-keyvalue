@@ -29,7 +29,7 @@ import org.springframework.dao.DataRetrievalFailureException;
  */
 class KeyValuePersistenceExceptionTranslatorUnitTests {
 
-	private KeyValuePersistenceExceptionTranslator translator = new KeyValuePersistenceExceptionTranslator();
+	private final KeyValuePersistenceExceptionTranslator translator = new KeyValuePersistenceExceptionTranslator();
 
 	@Test // DATACMNS-525
 	void translateExeptionShouldReturnDataAccessExceptionWhenGivenOne() {

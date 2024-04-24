@@ -29,7 +29,7 @@ import org.springframework.data.util.TypeInformation;
  */
 class DefaultIdentifierGeneratorUnitTests {
 
-	private DefaultIdentifierGenerator generator = DefaultIdentifierGenerator.INSTANCE;
+	private final DefaultIdentifierGenerator generator = DefaultIdentifierGenerator.INSTANCE;
 
 	@Test
 	void shouldThrowExceptionForUnsupportedType() {

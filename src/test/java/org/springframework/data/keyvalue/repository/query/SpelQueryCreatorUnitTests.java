@@ -437,9 +437,10 @@ public class SpelQueryCreatorUnitTests {
 	public static class Person {
 
 		private @Id String id;
-		private String firstname, lastname;
+		private String firstname;
+		private String lastname;
 		private int age;
-		private boolean isSkinChanger = false;
+		private boolean isSkinChanger;
 		private Date birthday;
 
 		public Person() {}
